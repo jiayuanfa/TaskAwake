@@ -1,0 +1,13 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "d623d5a1595442013e04d0c7b2f9e25c"
+build_time: [522823668, 719173000]
+inputs:
+  "/Users/apple/Desktop/TaskAwoke/TaskAwoke/ViewController.swift": [522163360, 0]
+  "/Users/apple/Desktop/TaskAwoke/TaskAwoke/AddNewEventVC.swift": [522823414, 0]
+  "/Users/apple/Desktop/TaskAwoke/TaskAwoke/AllListTableViewController.swift": [522823624, 0]
+  "/Users/apple/Desktop/TaskAwoke/TaskAwoke/CheckList.swift": [522823414, 0]
+  "/Users/apple/Desktop/TaskAwoke/TaskAwoke/ListDetailTableViewController.swift": [522672895, 0]
+  "/Users/apple/Desktop/TaskAwoke/TaskAwoke/MainItem.swift": [522434008, 0]
+  "/Users/apple/Desktop/TaskAwoke/TaskAwoke/MainController.swift": [522823668, 0]
+  "/Users/apple/Desktop/TaskAwoke/TaskAwoke/AppDelegate.swift": [522677614, 0]
+  "/Users/apple/Desktop/TaskAwoke/TaskAwoke/DataModel.swift": [522779087, 0]

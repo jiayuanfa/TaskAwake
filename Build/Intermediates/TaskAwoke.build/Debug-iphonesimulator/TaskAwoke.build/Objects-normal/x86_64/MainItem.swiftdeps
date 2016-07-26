@@ -1,0 +1,129 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MainItem"
+provides-nominal:
+- "C9TaskAwoke8MainItem"
+provides-member:
+- ["C9TaskAwoke8MainItem", ""]
+provides-dynamic-lookup:
+- "encodeWithCoder"
+- "text"
+- "toggleChecked"
+- "checked"
+depends-top-level:
+- "MainItem"
+- "Bool"
+- "StringLiteralType"
+- "NSCoder"
+- !private "!"
+- "NSObject"
+- "String"
+depends-member:
+- ["Ps9AnyObject", "checked"]
+- !private ["Ps9AnyObject", "decodeObjectForKey"]
+- !private ["Ps9AnyObject", "encodeObject"]
+- ["Ps9AnyObject", "encodeWithCoder"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "toggleChecked"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "deinit"]
+- ["Ps11CVarArgType", "checked"]
+- !private ["Ps11CVarArgType", "decodeObjectForKey"]
+- !private ["Ps11CVarArgType", "encodeObject"]
+- ["Ps11CVarArgType", "encodeWithCoder"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "text"]
+- ["Ps11CVarArgType", "toggleChecked"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "checked"]
+- !private ["Ps28CustomDebugStringConvertible", "decodeObjectForKey"]
+- !private ["Ps28CustomDebugStringConvertible", "encodeObject"]
+- ["Ps28CustomDebugStringConvertible", "encodeWithCoder"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "toggleChecked"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "checked"]
+- !private ["Ps23CustomStringConvertible", "decodeObjectForKey"]
+- !private ["Ps23CustomStringConvertible", "encodeObject"]
+- ["Ps23CustomStringConvertible", "encodeWithCoder"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "toggleChecked"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "checked"]
+- !private ["Ps9Equatable", "decodeObjectForKey"]
+- !private ["Ps9Equatable", "encodeObject"]
+- ["Ps9Equatable", "encodeWithCoder"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "toggleChecked"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "checked"]
+- !private ["Ps8Hashable", "decodeObjectForKey"]
+- !private ["Ps8Hashable", "encodeObject"]
+- ["Ps8Hashable", "encodeWithCoder"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "toggleChecked"]
+- ["Ps8Hashable", ""]
+- ["C9TaskAwoke8MainItem", "Bool"]
+- ["C9TaskAwoke8MainItem", "NSCoder"]
+- ["C9TaskAwoke8MainItem", "String"]
+- ["C9TaskAwoke8MainItem", "checked"]
+- ["C9TaskAwoke8MainItem", "deinit"]
+- ["C9TaskAwoke8MainItem", "encodeWithCoder"]
+- ["C9TaskAwoke8MainItem", "init"]
+- ["C9TaskAwoke8MainItem", "text"]
+- ["C9TaskAwoke8MainItem", "toggleChecked"]
+- !private ["CSo7NSCoder", "decodeObjectForKey"]
+- !private ["CSo7NSCoder", "encodeObject"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "NSCoder"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "checked"]
+- !private ["CSo8NSObject", "decodeObjectForKey"]
+- !private ["CSo8NSObject", "encodeObject"]
+- ["CSo8NSObject", "encodeWithCoder"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "toggleChecked"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "checked"]
+- !private ["PSo16NSObjectProtocol", "decodeObjectForKey"]
+- !private ["PSo16NSObjectProtocol", "encodeObject"]
+- ["PSo16NSObjectProtocol", "encodeWithCoder"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "toggleChecked"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Sq", "deinit"]
+- !private ["Vs12StaticString", "deinit"]
+- !private ["SS", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "C9TaskAwoke8MainItem"
+- !private "CSo7NSCoder"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Sq"
+- !private "Vs12StaticString"
+- !private "SS"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "d9a390e9ca043f0cc678de26490bffa5"
