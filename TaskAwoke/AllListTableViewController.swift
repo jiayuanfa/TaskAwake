@@ -6,6 +6,8 @@
 //  Copyright © 2016年 Jafar MacPro. All rights reserved.
 //
 
+// 所有任务类型类
+
 import UIKit
 
 class AllListTableViewController: UITableViewController,ListDetailTableViewDelegate,UINavigationControllerDelegate {

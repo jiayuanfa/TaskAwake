@@ -6,53 +6,54 @@ provides-nominal:
 provides-member:
 - ["C9TaskAwoke26AllListTableViewController", ""]
 provides-dynamic-lookup:
-- "listsDataModel"
-- "numberOfSectionsInTableView"
-- "viewWillAppear"
-- "addFinish"
-- "navigationController"
-- "viewDidAppear"
-- "editFinish"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "cancle"
-- "didReceiveMemoryWarning"
-- "prepareForSegue"
 - "viewDidLoad"
+- "listsDataModel"
+- "didReceiveMemoryWarning"
+- "editFinish"
+- "numberOfSectionsInTableView"
+- "cancle"
+- "addFinish"
+- "viewWillAppear"
+- "viewDidAppear"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "prepareForSegue"
+- "navigationController"
 depends-top-level:
-- !private "ListDetailTableViewController"
-- "UITableViewController"
-- "NSIndexPath"
-- "UITableViewCellEditingStyle"
-- !private "MainController"
-- "AllListTableViewController"
-- !private "BooleanLiteralType"
-- !private "Array"
-- "DataModel"
-- "UITableViewCell"
-- "UINavigationControllerDelegate"
-- "UIStoryboardSegue"
 - !private "UITableViewCellStyle"
-- "ListDetailTableViewDelegate"
-- !private ">"
-- "CheckList"
 - "Int"
-- !private "&&"
-- "AnyObject"
-- !private "<"
-- "Bool"
+- "NSIndexPath"
 - !private "StringLiteralType"
-- !private "UITableViewCellAccessoryType"
-- !private "=="
-- !private "UITableViewRowAnimation"
-- "UINavigationController"
+- !private ">"
+- "UIStoryboardSegue"
+- "UITableViewCellEditingStyle"
+- "DataModel"
+- "AllListTableViewController"
+- !private "ListDetailTableViewController"
 - "UIViewController"
+- "AnyObject"
 - "UITableView"
+- !private "=="
+- !private "MainController"
+- !private "Array"
+- !private "&&"
+- !private "UITableViewCellAccessoryType"
+- "UINavigationControllerDelegate"
+- !private "<"
+- "CheckList"
+- "ListDetailTableViewDelegate"
+- !private "BooleanLiteralType"
+- !private "UITableViewRowAnimation"
+- !private "UIView"
+- "Bool"
+- "UITableViewCell"
+- "UITableViewController"
+- "UINavigationController"
 depends-member:
 - ["C9TaskAwoke26AllListTableViewController", "AnyObject"]
 - ["C9TaskAwoke26AllListTableViewController", "Bool"]
@@ -70,6 +71,7 @@ depends-member:
 - ["C9TaskAwoke26AllListTableViewController", "UITableViewCellEditingStyle"]
 - !private ["C9TaskAwoke26AllListTableViewController", "UITableViewCellStyle"]
 - !private ["C9TaskAwoke26AllListTableViewController", "UITableViewRowAnimation"]
+- !private ["C9TaskAwoke26AllListTableViewController", "UIView"]
 - ["C9TaskAwoke26AllListTableViewController", "UIViewController"]
 - ["C9TaskAwoke26AllListTableViewController", "addFinish"]
 - ["C9TaskAwoke26AllListTableViewController", "cancle"]
@@ -96,6 +98,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UITableViewCellAccessoryType"]
 - !private ["Ps9AnyObject", "UITableViewCellStyle"]
 - !private ["Ps9AnyObject", "UITableViewRowAnimation"]
+- !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "accessoryType"]
 - ["Ps9AnyObject", "addFinish"]
 - ["Ps9AnyObject", "cancle"]
@@ -133,6 +136,7 @@ depends-member:
 - !private ["Ps9AnyObject", "setIndexOfSelectedCheckList"]
 - !private ["Ps9AnyObject", "sortCheckList"]
 - !private ["Ps9AnyObject", "storyboard"]
+- !private ["Ps9AnyObject", "tableFooterView"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "textLabel"]
@@ -177,6 +181,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "UITableViewCellAccessoryType"]
 - !private ["Ps11CVarArgType", "UITableViewCellStyle"]
 - !private ["Ps11CVarArgType", "UITableViewRowAnimation"]
+- !private ["Ps11CVarArgType", "UIView"]
 - !private ["Ps11CVarArgType", "accessoryType"]
 - ["Ps11CVarArgType", "addFinish"]
 - ["Ps11CVarArgType", "cancle"]
@@ -214,6 +219,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "setIndexOfSelectedCheckList"]
 - !private ["Ps11CVarArgType", "sortCheckList"]
 - !private ["Ps11CVarArgType", "storyboard"]
+- !private ["Ps11CVarArgType", "tableFooterView"]
 - ["Ps11CVarArgType", "tableView"]
 - !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "textLabel"]
@@ -248,6 +254,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UITableViewCellAccessoryType"]
 - !private ["Ps28CustomDebugStringConvertible", "UITableViewCellStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "UITableViewRowAnimation"]
+- !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "accessoryType"]
 - ["Ps28CustomDebugStringConvertible", "addFinish"]
@@ -290,6 +297,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "sortCheckList"]
 - !private ["Ps28CustomDebugStringConvertible", "storyboard"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "tableFooterView"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "textLabel"]
@@ -309,6 +317,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UITableViewCellAccessoryType"]
 - !private ["Ps23CustomStringConvertible", "UITableViewCellStyle"]
 - !private ["Ps23CustomStringConvertible", "UITableViewRowAnimation"]
+- !private ["Ps23CustomStringConvertible", "UIView"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "accessoryType"]
@@ -352,6 +361,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "sortCheckList"]
 - !private ["Ps23CustomStringConvertible", "storyboard"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "tableFooterView"]
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "textLabel"]
@@ -381,6 +391,7 @@ depends-member:
 - !private ["Ps9Equatable", "UITableViewCellAccessoryType"]
 - !private ["Ps9Equatable", "UITableViewCellStyle"]
 - !private ["Ps9Equatable", "UITableViewRowAnimation"]
+- !private ["Ps9Equatable", "UIView"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "accessoryType"]
 - ["Ps9Equatable", "addFinish"]
@@ -419,6 +430,7 @@ depends-member:
 - !private ["Ps9Equatable", "setIndexOfSelectedCheckList"]
 - !private ["Ps9Equatable", "sortCheckList"]
 - !private ["Ps9Equatable", "storyboard"]
+- !private ["Ps9Equatable", "tableFooterView"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "textLabel"]
@@ -446,6 +458,7 @@ depends-member:
 - !private ["Ps8Hashable", "UITableViewCellAccessoryType"]
 - !private ["Ps8Hashable", "UITableViewCellStyle"]
 - !private ["Ps8Hashable", "UITableViewRowAnimation"]
+- !private ["Ps8Hashable", "UIView"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "accessoryType"]
 - ["Ps8Hashable", "addFinish"]
@@ -484,6 +497,7 @@ depends-member:
 - !private ["Ps8Hashable", "setIndexOfSelectedCheckList"]
 - !private ["Ps8Hashable", "sortCheckList"]
 - !private ["Ps8Hashable", "storyboard"]
+- !private ["Ps8Hashable", "tableFooterView"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "textLabel"]
@@ -522,6 +536,7 @@ depends-member:
 - !private ["P9TaskAwoke27ListDetailTableViewDelegate", "UITableViewCellAccessoryType"]
 - !private ["P9TaskAwoke27ListDetailTableViewDelegate", "UITableViewCellStyle"]
 - !private ["P9TaskAwoke27ListDetailTableViewDelegate", "UITableViewRowAnimation"]
+- !private ["P9TaskAwoke27ListDetailTableViewDelegate", "UIView"]
 - ["P9TaskAwoke27ListDetailTableViewDelegate", "addFinish"]
 - ["P9TaskAwoke27ListDetailTableViewDelegate", "cancle"]
 - !private ["P9TaskAwoke27ListDetailTableViewDelegate", "dismissViewControllerAnimated"]
@@ -572,6 +587,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UITableViewCellAccessoryType"]
 - !private ["PSo8NSCoding", "UITableViewCellStyle"]
 - !private ["PSo8NSCoding", "UITableViewRowAnimation"]
+- !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "accessoryType"]
 - ["PSo8NSCoding", "addFinish"]
 - ["PSo8NSCoding", "cancle"]
@@ -600,6 +616,7 @@ depends-member:
 - !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "row"]
 - !private ["PSo8NSCoding", "storyboard"]
+- !private ["PSo8NSCoding", "tableFooterView"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textLabel"]
@@ -615,6 +632,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewCellAccessoryType"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewCellStyle"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewRowAnimation"]
+- !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - ["PSo26NSExtensionRequestHandling", "addFinish"]
 - ["PSo26NSExtensionRequestHandling", "cancle"]
 - !private ["PSo26NSExtensionRequestHandling", "checkList"]
@@ -658,6 +676,7 @@ depends-member:
 - ["CSo8NSObject", "UITableViewCellEditingStyle"]
 - !private ["CSo8NSObject", "UITableViewCellStyle"]
 - !private ["CSo8NSObject", "UITableViewRowAnimation"]
+- !private ["CSo8NSObject", "UIView"]
 - ["CSo8NSObject", "UIViewController"]
 - !private ["CSo8NSObject", "accessoryType"]
 - ["CSo8NSObject", "addFinish"]
@@ -696,6 +715,7 @@ depends-member:
 - !private ["CSo8NSObject", "setIndexOfSelectedCheckList"]
 - !private ["CSo8NSObject", "sortCheckList"]
 - !private ["CSo8NSObject", "storyboard"]
+- !private ["CSo8NSObject", "tableFooterView"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textLabel"]
@@ -708,6 +728,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UITableViewCellAccessoryType"]
 - !private ["PSo16NSObjectProtocol", "UITableViewCellStyle"]
 - !private ["PSo16NSObjectProtocol", "UITableViewRowAnimation"]
+- !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "accessoryType"]
 - ["PSo16NSObjectProtocol", "addFinish"]
 - ["PSo16NSObjectProtocol", "cancle"]
@@ -745,6 +766,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "setIndexOfSelectedCheckList"]
 - !private ["PSo16NSObjectProtocol", "sortCheckList"]
 - !private ["PSo16NSObjectProtocol", "storyboard"]
+- !private ["PSo16NSObjectProtocol", "tableFooterView"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textLabel"]
@@ -806,6 +828,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "insertRowsAtIndexPaths"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
+- !private ["PSo29UIAccessibilityIdentification", "tableFooterView"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textLabel"]
 - !private ["PSo12UIAppearance", "accessoryType"]
@@ -815,6 +838,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "insertRowsAtIndexPaths"]
 - !private ["PSo12UIAppearance", "reloadData"]
+- !private ["PSo12UIAppearance", "tableFooterView"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textLabel"]
 - !private ["PSo21UIAppearanceContainer", "NSIndexPath"]
@@ -822,6 +846,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UITableViewCellAccessoryType"]
 - !private ["PSo21UIAppearanceContainer", "UITableViewCellStyle"]
 - !private ["PSo21UIAppearanceContainer", "UITableViewRowAnimation"]
+- !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "accessoryType"]
 - ["PSo21UIAppearanceContainer", "addFinish"]
 - ["PSo21UIAppearanceContainer", "cancle"]
@@ -846,6 +871,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - !private ["PSo21UIAppearanceContainer", "storyboard"]
+- !private ["PSo21UIAppearanceContainer", "tableFooterView"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
@@ -859,6 +885,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UITableViewCellAccessoryType"]
 - !private ["PSo18UIContentContainer", "UITableViewCellStyle"]
 - !private ["PSo18UIContentContainer", "UITableViewRowAnimation"]
+- !private ["PSo18UIContentContainer", "UIView"]
 - ["PSo18UIContentContainer", "addFinish"]
 - ["PSo18UIContentContainer", "cancle"]
 - !private ["PSo18UIContentContainer", "checkList"]
@@ -890,6 +917,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "insertRowsAtIndexPaths"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
+- !private ["PSo17UICoordinateSpace", "tableFooterView"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textLabel"]
 - !private ["PSo13UIDynamicItem", "accessoryType"]
@@ -899,6 +927,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "insertRowsAtIndexPaths"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
+- !private ["PSo13UIDynamicItem", "tableFooterView"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
 - !private ["PSo18UIFocusEnvironment", "NSIndexPath"]
@@ -906,6 +935,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UITableViewCellAccessoryType"]
 - !private ["PSo18UIFocusEnvironment", "UITableViewCellStyle"]
 - !private ["PSo18UIFocusEnvironment", "UITableViewRowAnimation"]
+- !private ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "accessoryType"]
 - ["PSo18UIFocusEnvironment", "addFinish"]
 - ["PSo18UIFocusEnvironment", "cancle"]
@@ -930,6 +960,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
 - !private ["PSo18UIFocusEnvironment", "storyboard"]
+- !private ["PSo18UIFocusEnvironment", "tableFooterView"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
@@ -950,6 +981,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "UITableViewCellAccessoryType"]
 - !private ["PSo30UINavigationControllerDelegate", "UITableViewCellStyle"]
 - !private ["PSo30UINavigationControllerDelegate", "UITableViewRowAnimation"]
+- !private ["PSo30UINavigationControllerDelegate", "UIView"]
 - ["PSo30UINavigationControllerDelegate", "addFinish"]
 - ["PSo30UINavigationControllerDelegate", "cancle"]
 - !private ["PSo30UINavigationControllerDelegate", "dismissViewControllerAnimated"]
@@ -979,6 +1011,7 @@ depends-member:
 - ["CSo11UIResponder", "UITableViewCellEditingStyle"]
 - !private ["CSo11UIResponder", "UITableViewCellStyle"]
 - !private ["CSo11UIResponder", "UITableViewRowAnimation"]
+- !private ["CSo11UIResponder", "UIView"]
 - ["CSo11UIResponder", "UIViewController"]
 - !private ["CSo11UIResponder", "accessoryType"]
 - ["CSo11UIResponder", "addFinish"]
@@ -1004,6 +1037,7 @@ depends-member:
 - !private ["CSo11UIResponder", "presentViewController"]
 - !private ["CSo11UIResponder", "reloadData"]
 - !private ["CSo11UIResponder", "storyboard"]
+- !private ["CSo11UIResponder", "tableFooterView"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textLabel"]
@@ -1015,11 +1049,13 @@ depends-member:
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo12UIScrollView", "insertRowsAtIndexPaths"]
 - !private ["CSo12UIScrollView", "reloadData"]
+- !private ["CSo12UIScrollView", "tableFooterView"]
 - !private ["PSo20UIScrollViewDelegate", "NSIndexPath"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewCell"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewCellAccessoryType"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewCellStyle"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewRowAnimation"]
+- !private ["PSo20UIScrollViewDelegate", "UIView"]
 - ["PSo20UIScrollViewDelegate", "addFinish"]
 - ["PSo20UIScrollViewDelegate", "cancle"]
 - !private ["PSo20UIScrollViewDelegate", "checkList"]
@@ -1048,6 +1084,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UITableViewCellAccessoryType"]
 - !private ["PSo16UIStateRestoring", "UITableViewCellStyle"]
 - !private ["PSo16UIStateRestoring", "UITableViewRowAnimation"]
+- !private ["PSo16UIStateRestoring", "UIView"]
 - ["PSo16UIStateRestoring", "addFinish"]
 - ["PSo16UIStateRestoring", "cancle"]
 - !private ["PSo16UIStateRestoring", "checkList"]
@@ -1079,6 +1116,7 @@ depends-member:
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo11UITableView", "insertRowsAtIndexPaths"]
 - !private ["CSo11UITableView", "reloadData"]
+- !private ["CSo11UITableView", "tableFooterView"]
 - !private ["CSo15UITableViewCell", "accessoryType"]
 - !private ["CSo15UITableViewCell", "detailTextLabel"]
 - !private ["CSo15UITableViewCell", "init"]
@@ -1105,6 +1143,7 @@ depends-member:
 - ["CSo21UITableViewController", "UITableViewCellEditingStyle"]
 - !private ["CSo21UITableViewController", "UITableViewCellStyle"]
 - !private ["CSo21UITableViewController", "UITableViewRowAnimation"]
+- !private ["CSo21UITableViewController", "UIView"]
 - ["CSo21UITableViewController", "UIViewController"]
 - ["CSo21UITableViewController", "addFinish"]
 - ["CSo21UITableViewController", "cancle"]
@@ -1134,6 +1173,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UITableViewCellAccessoryType"]
 - !private ["PSo21UITableViewDataSource", "UITableViewCellStyle"]
 - !private ["PSo21UITableViewDataSource", "UITableViewRowAnimation"]
+- !private ["PSo21UITableViewDataSource", "UIView"]
 - ["PSo21UITableViewDataSource", "addFinish"]
 - ["PSo21UITableViewDataSource", "cancle"]
 - !private ["PSo21UITableViewDataSource", "checkList"]
@@ -1162,6 +1202,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UITableViewCellAccessoryType"]
 - !private ["PSo19UITableViewDelegate", "UITableViewCellStyle"]
 - !private ["PSo19UITableViewDelegate", "UITableViewRowAnimation"]
+- !private ["PSo19UITableViewDelegate", "UIView"]
 - ["PSo19UITableViewDelegate", "addFinish"]
 - ["PSo19UITableViewDelegate", "cancle"]
 - !private ["PSo19UITableViewDelegate", "checkList"]
@@ -1194,6 +1235,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UITableViewCellAccessoryType"]
 - !private ["PSo18UITraitEnvironment", "UITableViewCellStyle"]
 - !private ["PSo18UITraitEnvironment", "UITableViewRowAnimation"]
+- !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "accessoryType"]
 - ["PSo18UITraitEnvironment", "addFinish"]
 - ["PSo18UITraitEnvironment", "cancle"]
@@ -1218,6 +1260,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - !private ["PSo18UITraitEnvironment", "storyboard"]
+- !private ["PSo18UITraitEnvironment", "tableFooterView"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textLabel"]
@@ -1233,6 +1276,7 @@ depends-member:
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "insertRowsAtIndexPaths"]
 - !private ["CSo6UIView", "reloadData"]
+- !private ["CSo6UIView", "tableFooterView"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textLabel"]
 - ["CSo16UIViewController", "AnyObject"]
@@ -1251,6 +1295,7 @@ depends-member:
 - ["CSo16UIViewController", "UITableViewCellEditingStyle"]
 - !private ["CSo16UIViewController", "UITableViewCellStyle"]
 - !private ["CSo16UIViewController", "UITableViewRowAnimation"]
+- !private ["CSo16UIViewController", "UIView"]
 - ["CSo16UIViewController", "UIViewController"]
 - ["CSo16UIViewController", "addFinish"]
 - ["CSo16UIViewController", "cancle"]
@@ -1349,6 +1394,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "reloadData"]
 - !private ["Ps12_Reflectable", "removeAtIndex"]
 - !private ["Ps12_Reflectable", "subscript"]
+- !private ["Ps12_Reflectable", "tableFooterView"]
 - !private ["Ps12_Reflectable", "text"]
 - !private ["Ps12_Reflectable", "textLabel"]
 - !private ["Ps18_SignedIntegerType", "Distance"]

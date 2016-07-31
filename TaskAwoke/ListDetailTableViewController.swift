@@ -5,6 +5,7 @@
 //  Created by JiaYuanFa on 16/7/23.
 //  Copyright © 2016年 Jafar MacPro. All rights reserved.
 //
+// 编辑任务类型类
 
 import UIKit
 

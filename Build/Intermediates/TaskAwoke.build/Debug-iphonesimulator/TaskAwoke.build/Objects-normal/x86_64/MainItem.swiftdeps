@@ -6,95 +6,118 @@ provides-nominal:
 provides-member:
 - ["C9TaskAwoke8MainItem", ""]
 provides-dynamic-lookup:
-- "encodeWithCoder"
-- "text"
 - "toggleChecked"
+- "awakeTime"
+- "encodeWithCoder"
 - "checked"
+- "shouldRemind"
+- "text"
 depends-top-level:
-- "MainItem"
+- "NSDate"
 - "Bool"
-- "StringLiteralType"
 - "NSCoder"
+- "MainItem"
 - !private "!"
 - "NSObject"
+- "StringLiteralType"
 - "String"
 depends-member:
+- ["Ps9AnyObject", "awakeTime"]
 - ["Ps9AnyObject", "checked"]
 - !private ["Ps9AnyObject", "decodeObjectForKey"]
 - !private ["Ps9AnyObject", "encodeObject"]
 - ["Ps9AnyObject", "encodeWithCoder"]
 - ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "shouldRemind"]
 - ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "toggleChecked"]
 - ["Ps9AnyObject", ""]
 - !private ["Sb", "deinit"]
+- ["Ps11CVarArgType", "awakeTime"]
 - ["Ps11CVarArgType", "checked"]
 - !private ["Ps11CVarArgType", "decodeObjectForKey"]
 - !private ["Ps11CVarArgType", "encodeObject"]
 - ["Ps11CVarArgType", "encodeWithCoder"]
 - ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "shouldRemind"]
 - ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", "toggleChecked"]
 - ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "awakeTime"]
 - ["Ps28CustomDebugStringConvertible", "checked"]
 - !private ["Ps28CustomDebugStringConvertible", "decodeObjectForKey"]
 - !private ["Ps28CustomDebugStringConvertible", "encodeObject"]
 - ["Ps28CustomDebugStringConvertible", "encodeWithCoder"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "shouldRemind"]
 - ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "toggleChecked"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "awakeTime"]
 - ["Ps23CustomStringConvertible", "checked"]
 - !private ["Ps23CustomStringConvertible", "decodeObjectForKey"]
 - !private ["Ps23CustomStringConvertible", "encodeObject"]
 - ["Ps23CustomStringConvertible", "encodeWithCoder"]
 - ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "shouldRemind"]
 - ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "toggleChecked"]
 - ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "awakeTime"]
 - ["Ps9Equatable", "checked"]
 - !private ["Ps9Equatable", "decodeObjectForKey"]
 - !private ["Ps9Equatable", "encodeObject"]
 - ["Ps9Equatable", "encodeWithCoder"]
 - ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "shouldRemind"]
 - ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "toggleChecked"]
 - ["Ps9Equatable", ""]
+- ["Ps8Hashable", "awakeTime"]
 - ["Ps8Hashable", "checked"]
 - !private ["Ps8Hashable", "decodeObjectForKey"]
 - !private ["Ps8Hashable", "encodeObject"]
 - ["Ps8Hashable", "encodeWithCoder"]
 - ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "shouldRemind"]
 - ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "toggleChecked"]
 - ["Ps8Hashable", ""]
 - ["C9TaskAwoke8MainItem", "Bool"]
 - ["C9TaskAwoke8MainItem", "NSCoder"]
+- ["C9TaskAwoke8MainItem", "NSDate"]
 - ["C9TaskAwoke8MainItem", "String"]
+- ["C9TaskAwoke8MainItem", "awakeTime"]
 - ["C9TaskAwoke8MainItem", "checked"]
 - ["C9TaskAwoke8MainItem", "deinit"]
 - ["C9TaskAwoke8MainItem", "encodeWithCoder"]
 - ["C9TaskAwoke8MainItem", "init"]
+- ["C9TaskAwoke8MainItem", "shouldRemind"]
 - ["C9TaskAwoke8MainItem", "text"]
 - ["C9TaskAwoke8MainItem", "toggleChecked"]
 - !private ["CSo7NSCoder", "decodeObjectForKey"]
 - !private ["CSo7NSCoder", "encodeObject"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "NSCoder"]
+- ["CSo8NSObject", "NSDate"]
 - ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "awakeTime"]
 - ["CSo8NSObject", "checked"]
 - !private ["CSo8NSObject", "decodeObjectForKey"]
 - !private ["CSo8NSObject", "encodeObject"]
 - ["CSo8NSObject", "encodeWithCoder"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "shouldRemind"]
 - ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "toggleChecked"]
 - ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "awakeTime"]
 - ["PSo16NSObjectProtocol", "checked"]
 - !private ["PSo16NSObjectProtocol", "decodeObjectForKey"]
 - !private ["PSo16NSObjectProtocol", "encodeObject"]
 - ["PSo16NSObjectProtocol", "encodeWithCoder"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "shouldRemind"]
 - ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "toggleChecked"]
 - ["PSo16NSObjectProtocol", ""]
@@ -126,4 +149,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "d9a390e9ca043f0cc678de26490bffa5"
+interface-hash: "bdb7443cf96d20a7f3a79b26c666e8b2"

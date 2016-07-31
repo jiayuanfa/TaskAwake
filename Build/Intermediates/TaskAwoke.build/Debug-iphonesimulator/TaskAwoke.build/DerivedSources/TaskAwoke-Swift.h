@@ -94,15 +94,22 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import Foundation;
+@import CoreGraphics;
 @import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class MainItem;
+@class NSDate;
 @class UITextField;
 @class UIBarButtonItem;
 @class UITableView;
+@class NSIndexPath;
+@class UITableViewCell;
+@class UIDatePicker;
+@class UILabel;
+@class UISwitch;
 @class NSBundle;
 @class NSCoder;
 
@@ -110,15 +117,28 @@ SWIFT_CLASS("_TtC9TaskAwoke13AddNewEventVC")
 @interface AddNewEventVC : UITableViewController <UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified doneButton;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified newTaskCategory;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified awakeTimeLable;
+@property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified awakeSwitch;
 @property (nonatomic, strong) MainItem * _Nullable itemToEdit;
+@property (nonatomic, strong) NSDate * _Nullable dueDate;
+@property (nonatomic) BOOL datePickerVisible;
 - (void)viewDidLoad;
+- (void)showDatePicker;
+- (void)hideDatePicker;
 - (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string;
 - (IBAction)cancleClick:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)textDidEndOn:(UITextField * _Nonnull)sender;
 - (IBAction)doneClick:(UIBarButtonItem * _Nonnull)sender;
+- (void)updateDueDateLabel;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)dateChanged:(UIDatePicker * _Nonnull)datePicker;
+- (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView indentationLevelForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -127,8 +147,6 @@ SWIFT_CLASS("_TtC9TaskAwoke13AddNewEventVC")
 @class UINavigationController;
 @class UIViewController;
 @class DataModel;
-@class NSIndexPath;
-@class UITableViewCell;
 @class CheckList;
 @class UIStoryboardSegue;
 
@@ -180,6 +198,7 @@ SWIFT_CLASS("_TtC9TaskAwoke11AppDelegate")
 SWIFT_CLASS("_TtC9TaskAwoke9CheckList")
 @interface CheckList : NSObject <NSCoding>
 @property (nonatomic, copy) NSString * _Nonnull name;
+@property (nonatomic, copy) NSString * _Nonnull iconName;
 @property (nonatomic, copy) NSArray<MainItem *> * _Nonnull mainItems;
 - (nonnull instancetype)initWithName:(NSString * _Nonnull)name OBJC_DESIGNATED_INITIALIZER;
 - (NSInteger)countUnCheckItems;
@@ -223,7 +242,6 @@ SWIFT_CLASS("_TtC9TaskAwoke29ListDetailTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
 
 SWIFT_CLASS("_TtC9TaskAwoke14MainController")
 @interface MainController : UITableViewController
@@ -250,9 +268,11 @@ SWIFT_CLASS("_TtC9TaskAwoke8MainItem")
 @interface MainItem : NSObject
 @property (nonatomic, copy) NSString * _Nonnull text;
 @property (nonatomic) BOOL checked;
+@property (nonatomic, strong) NSDate * _Nonnull awakeTime;
+@property (nonatomic) BOOL shouldRemind;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Null_unspecified)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Null_unspecified)aCoder;
-- (nonnull instancetype)initWithText:(NSString * _Nonnull)text checked:(BOOL)checked OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithText:(NSString * _Nonnull)text checked:(BOOL)checked dueDate:(NSDate * _Nonnull)dueDate shouldRemind:(BOOL)shouldRemind OBJC_DESIGNATED_INITIALIZER;
 - (void)toggleChecked;
 @end
 

@@ -6,6 +6,8 @@
 //  Copyright © 2016年 Jafar MacPro. All rights reserved.
 //
 
+// 具体任务类型类
+
 import UIKit
 
 class MainController: UITableViewController,MainListControllerDelegate {

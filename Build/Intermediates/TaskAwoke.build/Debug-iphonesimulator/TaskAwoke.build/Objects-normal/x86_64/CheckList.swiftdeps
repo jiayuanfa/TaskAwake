@@ -7,19 +7,20 @@ provides-member:
 - ["C9TaskAwoke9CheckList", ""]
 provides-dynamic-lookup:
 - "encodeWithCoder"
-- "countUnCheckItems"
 - "name"
 - "mainItems"
+- "countUnCheckItems"
+- "iconName"
 depends-top-level:
-- "NSCoder"
 - "StringLiteralType"
-- "Int"
-- "CheckList"
-- "NSCoding"
 - "MainItem"
+- "CheckList"
 - !private "+="
-- !private "BooleanLiteralType"
 - !private "!="
+- "Int"
+- "NSCoder"
+- "NSCoding"
+- !private "BooleanLiteralType"
 - "String"
 - "NSObject"
 depends-member:
@@ -29,6 +30,7 @@ depends-member:
 - !private ["Ps9AnyObject", "decodeObjectForKey"]
 - !private ["Ps9AnyObject", "encodeObject"]
 - ["Ps9AnyObject", "encodeWithCoder"]
+- ["Ps9AnyObject", "iconName"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "mainItems"]
 - ["Ps9AnyObject", "name"]
@@ -62,6 +64,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "decodeObjectForKey"]
 - !private ["Ps11CVarArgType", "encodeObject"]
 - ["Ps11CVarArgType", "encodeWithCoder"]
+- ["Ps11CVarArgType", "iconName"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "mainItems"]
 - ["Ps11CVarArgType", "name"]
@@ -73,6 +76,7 @@ depends-member:
 - ["C9TaskAwoke9CheckList", "countUnCheckItems"]
 - ["C9TaskAwoke9CheckList", "deinit"]
 - ["C9TaskAwoke9CheckList", "encodeWithCoder"]
+- ["C9TaskAwoke9CheckList", "iconName"]
 - ["C9TaskAwoke9CheckList", "init"]
 - ["C9TaskAwoke9CheckList", "mainItems"]
 - ["C9TaskAwoke9CheckList", "name"]
@@ -93,6 +97,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "decodeObjectForKey"]
 - !private ["Ps28CustomDebugStringConvertible", "encodeObject"]
 - ["Ps28CustomDebugStringConvertible", "encodeWithCoder"]
+- ["Ps28CustomDebugStringConvertible", "iconName"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "mainItems"]
 - ["Ps28CustomDebugStringConvertible", "name"]
@@ -110,6 +115,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "decodeObjectForKey"]
 - !private ["Ps23CustomStringConvertible", "encodeObject"]
 - ["Ps23CustomStringConvertible", "encodeWithCoder"]
+- ["Ps23CustomStringConvertible", "iconName"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "mainItems"]
 - ["Ps23CustomStringConvertible", "name"]
@@ -123,6 +129,7 @@ depends-member:
 - !private ["Ps9Equatable", "decodeObjectForKey"]
 - !private ["Ps9Equatable", "encodeObject"]
 - ["Ps9Equatable", "encodeWithCoder"]
+- ["Ps9Equatable", "iconName"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "mainItems"]
 - ["Ps9Equatable", "name"]
@@ -139,6 +146,7 @@ depends-member:
 - !private ["Ps8Hashable", "decodeObjectForKey"]
 - !private ["Ps8Hashable", "encodeObject"]
 - ["Ps8Hashable", "encodeWithCoder"]
+- ["Ps8Hashable", "iconName"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "mainItems"]
 - ["Ps8Hashable", "name"]
@@ -179,6 +187,7 @@ depends-member:
 - !private ["CSo7NSCoder", "encodeObject"]
 - ["PSo8NSCoding", "MainItem"]
 - ["PSo8NSCoding", "encodeWithCoder"]
+- !private ["PSo8NSCoding", "iconName"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "mainItems"]
 - !private ["PSo8NSCoding", "name"]
@@ -192,6 +201,7 @@ depends-member:
 - !private ["CSo8NSObject", "decodeObjectForKey"]
 - !private ["CSo8NSObject", "encodeObject"]
 - ["CSo8NSObject", "encodeWithCoder"]
+- ["CSo8NSObject", "iconName"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "mainItems"]
 - ["CSo8NSObject", "name"]
@@ -202,6 +212,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "decodeObjectForKey"]
 - !private ["PSo16NSObjectProtocol", "encodeObject"]
 - ["PSo16NSObjectProtocol", "encodeWithCoder"]
+- ["PSo16NSObjectProtocol", "iconName"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "mainItems"]
 - ["PSo16NSObjectProtocol", "name"]
@@ -334,4 +345,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "5554298ec729029b8407fa521d5c16f4"
+interface-hash: "e6c205f158e61a03f7ade41626a7afe8"
