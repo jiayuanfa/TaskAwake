@@ -220,6 +220,7 @@ SWIFT_CLASS("_TtC9TaskAwoke9DataModel")
 - (void)loadCheckListItems;
 - (NSString * _Nonnull)documentDirectory;
 - (NSString * _Nonnull)filePath;
++ (NSInteger)createTaskIdFunction;
 @end
 
 
@@ -263,6 +264,7 @@ SWIFT_CLASS("_TtC9TaskAwoke14MainController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILocalNotification;
 
 SWIFT_CLASS("_TtC9TaskAwoke8MainItem")
 @interface MainItem : NSObject
@@ -270,10 +272,13 @@ SWIFT_CLASS("_TtC9TaskAwoke8MainItem")
 @property (nonatomic) BOOL checked;
 @property (nonatomic, strong) NSDate * _Nonnull awakeTime;
 @property (nonatomic) BOOL shouldRemind;
+@property (nonatomic) NSInteger itemID;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Null_unspecified)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Null_unspecified)aCoder;
 - (nonnull instancetype)initWithText:(NSString * _Nonnull)text checked:(BOOL)checked dueDate:(NSDate * _Nonnull)dueDate shouldRemind:(BOOL)shouldRemind OBJC_DESIGNATED_INITIALIZER;
 - (void)toggleChecked;
+- (void)scheduleNotification;
+- (UILocalNotification * _Nullable)notificationForItemID;
 @end
 
 

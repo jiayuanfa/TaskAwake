@@ -6,32 +6,36 @@ provides-nominal:
 provides-member:
 - ["C9TaskAwoke11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillEnterForeground"
-- "initListsDataList"
-- "application"
-- "applicationDidEnterBackground"
-- "applicationWillResignActive"
-- "dataModel"
-- "applicationWillTerminate"
-- "saveListsData"
-- "window"
 - "applicationDidBecomeActive"
+- "application"
+- "initListsDataList"
+- "applicationWillResignActive"
+- "applicationWillEnterForeground"
+- "dataModel"
+- "applicationDidEnterBackground"
+- "window"
+- "saveListsData"
+- "applicationWillTerminate"
 depends-top-level:
-- "AppDelegate"
-- "UIWindow"
-- !private "BooleanLiteralType"
-- "UIResponder"
 - !private "AllListTableViewController"
-- "NSObject"
-- "DataModel"
-- !private "UINavigationController"
-- "UIApplication"
 - "AnyObject"
-- "Bool"
+- "AppDelegate"
 - "UIApplicationDelegate"
+- "DataModel"
+- !private "Array"
+- !private "BooleanLiteralType"
+- !private "UINavigationController"
+- "UIResponder"
+- "UIApplication"
+- "UIWindow"
+- "NSObject"
+- "Bool"
+- !private "UIUserNotificationSettings"
 depends-member:
 - !private ["C9TaskAwoke26AllListTableViewController", "listsDataModel"]
 - !private ["Ps9AnyObject", "DataModel"]
+- !private ["Ps9AnyObject", "UIApplication"]
+- !private ["Ps9AnyObject", "UIUserNotificationSettings"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]
@@ -48,9 +52,11 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "initListsDataList"]
 - !private ["Ps9AnyObject", "listsDataModel"]
+- !private ["Ps9AnyObject", "registerUserNotificationSettings"]
 - !private ["Ps9AnyObject", "rootViewController"]
 - !private ["Ps9AnyObject", "savaListsData"]
 - ["Ps9AnyObject", "saveListsData"]
+- !private ["Ps9AnyObject", "sharedApplication"]
 - !private ["Ps9AnyObject", "viewControllers"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
@@ -61,6 +67,7 @@ depends-member:
 - ["C9TaskAwoke11AppDelegate", "NSObject"]
 - ["C9TaskAwoke11AppDelegate", "UIApplication"]
 - !private ["C9TaskAwoke11AppDelegate", "UINavigationController"]
+- !private ["C9TaskAwoke11AppDelegate", "UIUserNotificationSettings"]
 - ["C9TaskAwoke11AppDelegate", "UIWindow"]
 - ["C9TaskAwoke11AppDelegate", "application"]
 - ["C9TaskAwoke11AppDelegate", "applicationDidBecomeActive"]
@@ -85,8 +92,12 @@ depends-member:
 - !private ["Sa", "SubSequence"]
 - !private ["Sa", "_Element"]
 - !private ["Sa", "first"]
+- !private ["Ps23ArrayLiteralConvertible", "Alert"]
+- !private ["Ps23ArrayLiteralConvertible", "Badge"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
 - !private ["Ps23ArrayLiteralConvertible", "Generator"]
 - !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "Sound"]
 - !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
 - !private ["Ps23ArrayLiteralConvertible", "_Element"]
 - !private ["Ps23ArrayLiteralConvertible", "first"]
@@ -99,6 +110,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "DataModel"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "UIApplication"]
+- !private ["Ps11CVarArgType", "UIUserNotificationSettings"]
 - ["Ps11CVarArgType", "application"]
 - ["Ps11CVarArgType", "applicationDidBecomeActive"]
 - ["Ps11CVarArgType", "applicationDidEnterBackground"]
@@ -115,9 +128,11 @@ depends-member:
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "initListsDataList"]
 - !private ["Ps11CVarArgType", "listsDataModel"]
+- !private ["Ps11CVarArgType", "registerUserNotificationSettings"]
 - !private ["Ps11CVarArgType", "rootViewController"]
 - !private ["Ps11CVarArgType", "savaListsData"]
 - ["Ps11CVarArgType", "saveListsData"]
+- !private ["Ps11CVarArgType", "sharedApplication"]
 - !private ["Ps11CVarArgType", "viewControllers"]
 - ["Ps11CVarArgType", "window"]
 - ["Ps11CVarArgType", ""]
@@ -132,6 +147,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "UIUserNotificationSettings"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
@@ -150,9 +167,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "initListsDataList"]
 - !private ["Ps28CustomDebugStringConvertible", "listsDataModel"]
+- !private ["Ps28CustomDebugStringConvertible", "registerUserNotificationSettings"]
 - !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "savaListsData"]
 - ["Ps28CustomDebugStringConvertible", "saveListsData"]
+- !private ["Ps28CustomDebugStringConvertible", "sharedApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "viewControllers"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -162,6 +181,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIApplication"]
+- !private ["Ps23CustomStringConvertible", "UIUserNotificationSettings"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
@@ -180,17 +201,25 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "initListsDataList"]
 - !private ["Ps23CustomStringConvertible", "listsDataModel"]
+- !private ["Ps23CustomStringConvertible", "registerUserNotificationSettings"]
 - !private ["Ps23CustomStringConvertible", "rootViewController"]
 - !private ["Ps23CustomStringConvertible", "savaListsData"]
 - ["Ps23CustomStringConvertible", "saveListsData"]
+- !private ["Ps23CustomStringConvertible", "sharedApplication"]
 - !private ["Ps23CustomStringConvertible", "viewControllers"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["C9TaskAwoke9DataModel", "init"]
 - !private ["C9TaskAwoke9DataModel", "savaListsData"]
+- !private ["Ps9Equatable", "Alert"]
+- !private ["Ps9Equatable", "Badge"]
 - !private ["Ps9Equatable", "DataModel"]
 - !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "Element"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "Sound"]
+- !private ["Ps9Equatable", "UIApplication"]
+- !private ["Ps9Equatable", "UIUserNotificationSettings"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
 - ["Ps9Equatable", "applicationDidEnterBackground"]
@@ -207,9 +236,11 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "initListsDataList"]
 - !private ["Ps9Equatable", "listsDataModel"]
+- !private ["Ps9Equatable", "registerUserNotificationSettings"]
 - !private ["Ps9Equatable", "rootViewController"]
 - !private ["Ps9Equatable", "savaListsData"]
 - ["Ps9Equatable", "saveListsData"]
+- !private ["Ps9Equatable", "sharedApplication"]
 - !private ["Ps9Equatable", "viewControllers"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
@@ -219,6 +250,8 @@ depends-member:
 - !private ["Ps8Hashable", "DataModel"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "UIApplication"]
+- !private ["Ps8Hashable", "UIUserNotificationSettings"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
 - ["Ps8Hashable", "applicationDidEnterBackground"]
@@ -235,9 +268,11 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "initListsDataList"]
 - !private ["Ps8Hashable", "listsDataModel"]
+- !private ["Ps8Hashable", "registerUserNotificationSettings"]
 - !private ["Ps8Hashable", "rootViewController"]
 - !private ["Ps8Hashable", "savaListsData"]
 - ["Ps8Hashable", "saveListsData"]
+- !private ["Ps8Hashable", "sharedApplication"]
 - !private ["Ps8Hashable", "viewControllers"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
@@ -285,6 +320,7 @@ depends-member:
 - ["CSo8NSObject", "NSObject"]
 - ["CSo8NSObject", "UIApplication"]
 - !private ["CSo8NSObject", "UINavigationController"]
+- !private ["CSo8NSObject", "UIUserNotificationSettings"]
 - ["CSo8NSObject", "UIWindow"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
@@ -302,12 +338,16 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "initListsDataList"]
 - !private ["CSo8NSObject", "listsDataModel"]
+- !private ["CSo8NSObject", "registerUserNotificationSettings"]
 - !private ["CSo8NSObject", "rootViewController"]
 - !private ["CSo8NSObject", "savaListsData"]
 - ["CSo8NSObject", "saveListsData"]
+- !private ["CSo8NSObject", "sharedApplication"]
 - !private ["CSo8NSObject", "viewControllers"]
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "DataModel"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
+- !private ["PSo16NSObjectProtocol", "UIUserNotificationSettings"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -324,12 +364,18 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "initListsDataList"]
 - !private ["PSo16NSObjectProtocol", "listsDataModel"]
+- !private ["PSo16NSObjectProtocol", "registerUserNotificationSettings"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
 - !private ["PSo16NSObjectProtocol", "savaListsData"]
 - ["PSo16NSObjectProtocol", "saveListsData"]
+- !private ["PSo16NSObjectProtocol", "sharedApplication"]
 - !private ["PSo16NSObjectProtocol", "viewControllers"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["Ps13OptionSetType", "Alert"]
+- !private ["Ps13OptionSetType", "Badge"]
+- !private ["Ps13OptionSetType", "Element"]
+- !private ["Ps13OptionSetType", "Sound"]
 - !private ["Sq", "deinit"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
@@ -338,12 +384,20 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["Ps30RangeReplaceableCollectionType", "_Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "first"]
+- !private ["Ps16RawRepresentable", "Alert"]
+- !private ["Ps16RawRepresentable", "Badge"]
+- !private ["Ps16RawRepresentable", "Element"]
+- !private ["Ps16RawRepresentable", "Sound"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
 - !private ["Ps12SequenceType", "SubSequence"]
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "first"]
+- !private ["Ps14SetAlgebraType", "Alert"]
+- !private ["Ps14SetAlgebraType", "Badge"]
+- !private ["Ps14SetAlgebraType", "Element"]
+- !private ["Ps14SetAlgebraType", "Sound"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps16SignedNumberType", "Distance"]
@@ -355,7 +409,11 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "listsDataModel"]
 - !private ["PSo21UIAppearanceContainer", "rootViewController"]
 - !private ["PSo21UIAppearanceContainer", "viewControllers"]
+- !private ["CSo13UIApplication", "registerUserNotificationSettings"]
+- !private ["CSo13UIApplication", "sharedApplication"]
 - !private ["PSo21UIApplicationDelegate", "DataModel"]
+- !private ["PSo21UIApplicationDelegate", "UIApplication"]
+- !private ["PSo21UIApplicationDelegate", "UIUserNotificationSettings"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -389,6 +447,7 @@ depends-member:
 - ["CSo11UIResponder", "NSObject"]
 - ["CSo11UIResponder", "UIApplication"]
 - !private ["CSo11UIResponder", "UINavigationController"]
+- !private ["CSo11UIResponder", "UIUserNotificationSettings"]
 - ["CSo11UIResponder", "UIWindow"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
@@ -406,8 +465,10 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "initListsDataList"]
 - !private ["CSo11UIResponder", "listsDataModel"]
+- !private ["CSo11UIResponder", "registerUserNotificationSettings"]
 - !private ["CSo11UIResponder", "rootViewController"]
 - ["CSo11UIResponder", "saveListsData"]
+- !private ["CSo11UIResponder", "sharedApplication"]
 - !private ["CSo11UIResponder", "viewControllers"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
@@ -420,6 +481,11 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "listsDataModel"]
 - !private ["PSo18UITraitEnvironment", "rootViewController"]
 - !private ["PSo18UITraitEnvironment", "viewControllers"]
+- !private ["CSo26UIUserNotificationSettings", "init"]
+- !private ["VSC22UIUserNotificationType", "Alert"]
+- !private ["VSC22UIUserNotificationType", "Badge"]
+- !private ["VSC22UIUserNotificationType", "Element"]
+- !private ["VSC22UIUserNotificationType", "Sound"]
 - !private ["CSo6UIView", "rootViewController"]
 - !private ["CSo16UIViewController", "listsDataModel"]
 - !private ["CSo16UIViewController", "viewControllers"]
@@ -495,16 +561,20 @@ depends-nominal:
 - !private "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "Ps13OptionSetType"
 - !private "Sq"
 - !private "Ps21RandomAccessIndexType"
 - !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
 - !private "Ps12SequenceType"
+- !private "Ps14SetAlgebraType"
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
 - !private "Ps10Strideable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - !private "PSo21UIAppearanceContainer"
+- !private "CSo13UIApplication"
 - "PSo21UIApplicationDelegate"
 - !private "PSo18UIContentContainer"
 - !private "PSo17UICoordinateSpace"
@@ -519,6 +589,8 @@ depends-nominal:
 - !private "PSo21UITableViewDataSource"
 - !private "PSo19UITableViewDelegate"
 - !private "PSo18UITraitEnvironment"
+- !private "CSo26UIUserNotificationSettings"
+- !private "VSC22UIUserNotificationType"
 - !private "CSo6UIView"
 - !private "CSo16UIViewController"
 - !private "CSo8UIWindow"

@@ -81,5 +81,15 @@ class DataModel: NSObject {
     func filePath() -> String{
         return documentDirectory().stringByAppendingString("checkLists.plist")
     }
+    
+    //MARK:生成任务DI的方法
+    class func createTaskIdFunction() -> Int {
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        let itemId = userDefaults.integerForKey("checkListItemId")
+        // +1保存
+        userDefaults.setInteger(itemId+1, forKey: "checkListItemId")
+        userDefaults.synchronize()
+        return itemId
+    }
 
 }

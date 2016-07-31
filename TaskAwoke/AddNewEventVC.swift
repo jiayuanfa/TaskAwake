@@ -85,13 +85,16 @@ class AddNewEventVC: UITableViewController,UITextFieldDelegate {
     @IBAction func doneClick(sender: UIBarButtonItem) {
         let item = MainItem(text: self.newTaskCategory.text!, checked:false,dueDate: self.dueDate!,shouldRemind:self.awakeSwitch.on)
         if itemToEdit == nil {
-            
+            // 说明是添加任务 直接响应代理 传出任务  并且判断是否需要调用本地通知
+            item.scheduleNotification()
             delegate?.addItem(item)
         }else{
-            
             itemToEdit?.text = self.newTaskCategory.text!
             itemToEdit?.shouldRemind = self.awakeSwitch.on
             itemToEdit?.awakeTime = self.dueDate!
+            
+            // 说明是编辑任务 赋值之后响应代理 并且判断是否需要调用本地通知
+            itemToEdit?.scheduleNotification()
             delegate?.editItem(itemToEdit!)
         }
         self .dismissViewControllerAnimated(true, completion: nil)

@@ -20,8 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // App 启动的时候 获取DataModel 传递AllListTVC
         initListsDataList()
         
+        // 设置本地推送
+        let uns = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(uns)
         return true
-    }
+}
     
     func initListsDataList(){
         dataModel = DataModel()

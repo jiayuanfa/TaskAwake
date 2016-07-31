@@ -11,66 +11,66 @@ provides-member:
 - ["VSC8_NSRange", ""]
 - ["VSC8_NSRange", "toRange"]
 provides-dynamic-lookup:
-- "newTaskCategory"
-- "cancleClick"
-- "didReceiveMemoryWarning"
-- "textDidEndOn"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "numberOfSectionsInTableView"
-- "datePickerVisible"
 - "viewDidLoad"
+- "textFieldDidBeginEditing"
+- "dateChanged"
+- "cancleClick"
+- "newTaskCategory"
 - "textField"
-- "showDatePicker"
+- "datePickerVisible"
+- "textDidEndOn"
 - "hideDatePicker"
-- "doneButton"
+- "numberOfSectionsInTableView"
 - "awakeTimeLable"
 - "itemToEdit"
 - "doneClick"
-- "awakeSwitch"
-- "dueDate"
-- "textFieldDidBeginEditing"
+- "doneButton"
+- "showDatePicker"
+- "didReceiveMemoryWarning"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "updateDueDateLabel"
-- "dateChanged"
+- "dueDate"
+- "awakeSwitch"
 depends-top-level:
-- !private "UIControlEvents"
-- "MainItem"
-- "UITextField"
-- !private "StringLiteralType"
-- !private "NSDateFormatter"
-- !private "&&"
-- "UIDatePicker"
-- "AddNewEventVC"
-- "String"
-- "UITableView"
 - "Range"
-- "UIBarButtonItem"
-- "UISwitch"
-- "Bool"
-- !private "Array"
-- "CGFloat"
-- !private "UITableViewCellSelectionStyle"
-- !private "=="
-- "NSDate"
-- "UITextFieldDelegate"
-- "Int"
-- "MainListControllerDelegate"
-- "NSIndexPath"
-- !private "CGRectMake"
-- "UITableViewController"
-- !private "print"
-- !private "UITableViewCellStyle"
-- "UITableViewCell"
-- "BooleanLiteralType"
-- "NSRange"
-- !private ">"
-- !private "..<"
 - "UILabel"
+- !private "CGRectMake"
 - !private "!="
 - !private "UITableViewRowAnimation"
+- !private "UITableViewCellStyle"
+- "AddNewEventVC"
+- !private "=="
+- "UITableViewCell"
+- "Bool"
+- "CGFloat"
+- !private "StringLiteralType"
+- "NSDate"
+- "UITextField"
+- "UISwitch"
+- "MainListControllerDelegate"
+- !private "&&"
+- "UITableViewController"
+- "UITextFieldDelegate"
+- "UIBarButtonItem"
+- !private "print"
+- !private "NSDateFormatter"
+- "NSRange"
+- !private ">"
+- "UITableView"
+- "String"
+- !private "UIControlEvents"
+- !private "..<"
+- "BooleanLiteralType"
+- "UIDatePicker"
+- !private "Array"
+- "NSIndexPath"
+- !private "UITableViewCellSelectionStyle"
+- "Int"
+- "MainItem"
 depends-member:
 - !private ["C9TaskAwoke13AddNewEventVC", "AddNewEventVC"]
 - ["C9TaskAwoke13AddNewEventVC", "Bool"]
@@ -171,6 +171,7 @@ depends-member:
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "resignFirstResponder"]
 - !private ["Ps9AnyObject", "row"]
+- !private ["Ps9AnyObject", "scheduleNotification"]
 - !private ["Ps9AnyObject", "section"]
 - !private ["Ps9AnyObject", "selectionStyle"]
 - !private ["Ps9AnyObject", "shouldRemind"]
@@ -251,6 +252,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "resignFirstResponder"]
 - !private ["Ps11CVarArgType", "row"]
+- !private ["Ps11CVarArgType", "scheduleNotification"]
 - !private ["Ps11CVarArgType", "section"]
 - !private ["Ps11CVarArgType", "selectionStyle"]
 - !private ["Ps11CVarArgType", "shouldRemind"]
@@ -338,6 +340,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
+- !private ["Ps28CustomDebugStringConvertible", "scheduleNotification"]
 - !private ["Ps28CustomDebugStringConvertible", "section"]
 - !private ["Ps28CustomDebugStringConvertible", "selectionStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "shouldRemind"]
@@ -408,6 +411,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
 - !private ["Ps23CustomStringConvertible", "row"]
+- !private ["Ps23CustomStringConvertible", "scheduleNotification"]
 - !private ["Ps23CustomStringConvertible", "section"]
 - !private ["Ps23CustomStringConvertible", "selectionStyle"]
 - !private ["Ps23CustomStringConvertible", "shouldRemind"]
@@ -486,6 +490,7 @@ depends-member:
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "resignFirstResponder"]
 - !private ["Ps9Equatable", "row"]
+- !private ["Ps9Equatable", "scheduleNotification"]
 - !private ["Ps9Equatable", "section"]
 - !private ["Ps9Equatable", "selectionStyle"]
 - !private ["Ps9Equatable", "shouldRemind"]
@@ -569,6 +574,7 @@ depends-member:
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "resignFirstResponder"]
 - !private ["Ps8Hashable", "row"]
+- !private ["Ps8Hashable", "scheduleNotification"]
 - !private ["Ps8Hashable", "section"]
 - !private ["Ps8Hashable", "selectionStyle"]
 - !private ["Ps8Hashable", "shouldRemind"]
@@ -611,6 +617,7 @@ depends-member:
 - !private ["C9TaskAwoke8MainItem", "awakeTime"]
 - !private ["C9TaskAwoke8MainItem", "deinit"]
 - !private ["C9TaskAwoke8MainItem", "init"]
+- !private ["C9TaskAwoke8MainItem", "scheduleNotification"]
 - !private ["C9TaskAwoke8MainItem", "shouldRemind"]
 - !private ["C9TaskAwoke8MainItem", "text"]
 - ["P9TaskAwoke26MainListControllerDelegate", "MainItem"]
@@ -811,6 +818,7 @@ depends-member:
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "resignFirstResponder"]
 - !private ["CSo8NSObject", "row"]
+- !private ["CSo8NSObject", "scheduleNotification"]
 - !private ["CSo8NSObject", "section"]
 - !private ["CSo8NSObject", "selectionStyle"]
 - !private ["CSo8NSObject", "shouldRemind"]
@@ -877,6 +885,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
 - !private ["PSo16NSObjectProtocol", "row"]
+- !private ["PSo16NSObjectProtocol", "scheduleNotification"]
 - !private ["PSo16NSObjectProtocol", "section"]
 - !private ["PSo16NSObjectProtocol", "selectionStyle"]
 - !private ["PSo16NSObjectProtocol", "shouldRemind"]

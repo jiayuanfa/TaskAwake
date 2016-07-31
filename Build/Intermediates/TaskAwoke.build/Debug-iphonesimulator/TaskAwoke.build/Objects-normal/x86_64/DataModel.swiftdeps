@@ -6,37 +6,39 @@ provides-nominal:
 provides-member:
 - ["C9TaskAwoke9DataModel", ""]
 provides-dynamic-lookup:
-- "setIndexOfSelectedCheckList"
-- "getIndexOfCheckList"
-- "lists"
-- "registerDefaults"
-- "savaListsData"
-- "onSort"
-- "documentDirectory"
 - "sortCheckList"
 - "filePath"
+- "getIndexOfCheckList"
 - "loadCheckListItems"
+- "onSort"
+- "createTaskIdFunction"
+- "documentDirectory"
+- "savaListsData"
+- "setIndexOfSelectedCheckList"
+- "lists"
+- "registerDefaults"
 depends-top-level:
-- "DataModel"
-- !private "NSFileManager"
-- !private "NSKeyedUnarchiver"
-- !private "StringLiteralType"
-- !private ">"
-- !private "NSUserDefaults"
-- "CheckList"
-- !private "NSSearchPathForDirectoriesInDomains"
-- "Int"
-- !private "Array"
-- !private "Dictionary"
-- !private "BooleanLiteralType"
-- !private "NSKeyedArchiver"
-- !private "NSMutableData"
-- "NSObject"
-- "Bool"
-- !private "NSSearchPathDirectory"
-- "String"
-- !private "NSSearchPathDomainMask"
 - !private "NSData"
+- !private "NSKeyedUnarchiver"
+- !private "NSSearchPathForDirectoriesInDomains"
+- "Bool"
+- !private "+"
+- !private "NSUserDefaults"
+- !private "NSFileManager"
+- !private "NSSearchPathDirectory"
+- "DataModel"
+- !private "Array"
+- !private "StringLiteralType"
+- !private "NSSearchPathDomainMask"
+- "NSObject"
+- !private "NSKeyedArchiver"
+- "String"
+- !private "NSMutableData"
+- !private "Dictionary"
+- "Int"
+- "CheckList"
+- !private ">"
+- !private "BooleanLiteralType"
 depends-member:
 - ["Ps9AnyObject", "CheckList"]
 - !private ["Ps9AnyObject", "NSData"]
@@ -48,6 +50,7 @@ depends-member:
 - !private ["Ps9AnyObject", "NSSearchPathDomainMask"]
 - !private ["Ps9AnyObject", "NSSearchPathForDirectoriesInDomains"]
 - !private ["Ps9AnyObject", "NSUserDefaults"]
+- ["Ps9AnyObject", "createTaskIdFunction"]
 - !private ["Ps9AnyObject", "decodeObjectForKey"]
 - ["Ps9AnyObject", "documentDirectory"]
 - !private ["Ps9AnyObject", "encodeObject"]
@@ -69,6 +72,7 @@ depends-member:
 - ["Ps9AnyObject", "sortCheckList"]
 - !private ["Ps9AnyObject", "standardUserDefaults"]
 - !private ["Ps9AnyObject", "stringByAppendingString"]
+- !private ["Ps9AnyObject", "synchronize"]
 - !private ["Ps9AnyObject", "writeToFile"]
 - ["Ps9AnyObject", ""]
 - ["Sa", "Generator"]
@@ -114,6 +118,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "NSSearchPathForDirectoriesInDomains"]
 - !private ["Ps11CVarArgType", "NSUserDefaults"]
 - !private ["Ps11CVarArgType", "Stride"]
+- ["Ps11CVarArgType", "createTaskIdFunction"]
 - !private ["Ps11CVarArgType", "decodeObjectForKey"]
 - ["Ps11CVarArgType", "documentDirectory"]
 - !private ["Ps11CVarArgType", "encodeObject"]
@@ -135,6 +140,7 @@ depends-member:
 - ["Ps11CVarArgType", "sortCheckList"]
 - !private ["Ps11CVarArgType", "standardUserDefaults"]
 - !private ["Ps11CVarArgType", "stringByAppendingString"]
+- !private ["Ps11CVarArgType", "synchronize"]
 - !private ["Ps11CVarArgType", "writeToFile"]
 - ["Ps11CVarArgType", ""]
 - !private ["C9TaskAwoke9CheckList", "deinit"]
@@ -171,6 +177,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
 - ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
+- ["Ps28CustomDebugStringConvertible", "createTaskIdFunction"]
 - !private ["Ps28CustomDebugStringConvertible", "decodeObjectForKey"]
 - ["Ps28CustomDebugStringConvertible", "documentDirectory"]
 - !private ["Ps28CustomDebugStringConvertible", "encodeObject"]
@@ -194,6 +201,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "sortInPlace"]
 - !private ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
 - !private ["Ps28CustomDebugStringConvertible", "stringByAppendingString"]
+- !private ["Ps28CustomDebugStringConvertible", "synchronize"]
 - !private ["Ps28CustomDebugStringConvertible", "writeToFile"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps23CustomStringConvertible", "CheckList"]
@@ -217,6 +225,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
+- ["Ps23CustomStringConvertible", "createTaskIdFunction"]
 - !private ["Ps23CustomStringConvertible", "decodeObjectForKey"]
 - ["Ps23CustomStringConvertible", "documentDirectory"]
 - !private ["Ps23CustomStringConvertible", "encodeObject"]
@@ -240,6 +249,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "sortInPlace"]
 - !private ["Ps23CustomStringConvertible", "standardUserDefaults"]
 - !private ["Ps23CustomStringConvertible", "stringByAppendingString"]
+- !private ["Ps23CustomStringConvertible", "synchronize"]
 - !private ["Ps23CustomStringConvertible", "writeToFile"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["C9TaskAwoke9DataModel", "Array"]
@@ -257,6 +267,7 @@ depends-member:
 - !private ["C9TaskAwoke9DataModel", "NSSearchPathForDirectoriesInDomains"]
 - !private ["C9TaskAwoke9DataModel", "NSUserDefaults"]
 - ["C9TaskAwoke9DataModel", "String"]
+- ["C9TaskAwoke9DataModel", "createTaskIdFunction"]
 - ["C9TaskAwoke9DataModel", "deinit"]
 - ["C9TaskAwoke9DataModel", "documentDirectory"]
 - ["C9TaskAwoke9DataModel", "filePath"]
@@ -289,6 +300,7 @@ depends-member:
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "UserDomainMask"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "createTaskIdFunction"]
 - !private ["Ps9Equatable", "decodeObjectForKey"]
 - ["Ps9Equatable", "documentDirectory"]
 - !private ["Ps9Equatable", "encodeObject"]
@@ -310,6 +322,7 @@ depends-member:
 - ["Ps9Equatable", "sortCheckList"]
 - !private ["Ps9Equatable", "standardUserDefaults"]
 - !private ["Ps9Equatable", "stringByAppendingString"]
+- !private ["Ps9Equatable", "synchronize"]
 - !private ["Ps9Equatable", "writeToFile"]
 - ["Ps9Equatable", ""]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "stringByAppendingString"]
@@ -332,6 +345,7 @@ depends-member:
 - !private ["Ps8Hashable", "NSUserDefaults"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "createTaskIdFunction"]
 - !private ["Ps8Hashable", "decodeObjectForKey"]
 - ["Ps8Hashable", "documentDirectory"]
 - !private ["Ps8Hashable", "encodeObject"]
@@ -353,6 +367,7 @@ depends-member:
 - ["Ps8Hashable", "sortCheckList"]
 - !private ["Ps8Hashable", "standardUserDefaults"]
 - !private ["Ps8Hashable", "stringByAppendingString"]
+- !private ["Ps8Hashable", "synchronize"]
 - !private ["Ps8Hashable", "writeToFile"]
 - ["Ps8Hashable", ""]
 - ["Ps9Indexable", "Generator"]
@@ -448,6 +463,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSSearchPathForDirectoriesInDomains"]
 - !private ["CSo8NSObject", "NSUserDefaults"]
 - ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "createTaskIdFunction"]
 - !private ["CSo8NSObject", "decodeObjectForKey"]
 - ["CSo8NSObject", "documentDirectory"]
 - !private ["CSo8NSObject", "encodeObject"]
@@ -469,6 +485,7 @@ depends-member:
 - ["CSo8NSObject", "sortCheckList"]
 - !private ["CSo8NSObject", "standardUserDefaults"]
 - !private ["CSo8NSObject", "stringByAppendingString"]
+- !private ["CSo8NSObject", "synchronize"]
 - !private ["CSo8NSObject", "writeToFile"]
 - ["CSo8NSObject", ""]
 - ["PSo16NSObjectProtocol", "CheckList"]
@@ -481,6 +498,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSSearchPathDomainMask"]
 - !private ["PSo16NSObjectProtocol", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- ["PSo16NSObjectProtocol", "createTaskIdFunction"]
 - !private ["PSo16NSObjectProtocol", "decodeObjectForKey"]
 - ["PSo16NSObjectProtocol", "documentDirectory"]
 - !private ["PSo16NSObjectProtocol", "encodeObject"]
@@ -502,6 +520,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "sortCheckList"]
 - !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "stringByAppendingString"]
+- !private ["PSo16NSObjectProtocol", "synchronize"]
 - !private ["PSo16NSObjectProtocol", "writeToFile"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["OSC21NSSearchPathDirectory", "DocumentationDirectory"]
@@ -514,6 +533,7 @@ depends-member:
 - !private ["CSo14NSUserDefaults", "registerDefaults"]
 - !private ["CSo14NSUserDefaults", "setInteger"]
 - !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "synchronize"]
 - !private ["Ps13OptionSetType", "UserDomainMask"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "stringByAppendingString"]
@@ -716,4 +736,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "c73efd5a8335c4e1b4c172e0aa15ecbf"
+interface-hash: "b0f2cde59f5242d50b5f7f10efdfbc99"

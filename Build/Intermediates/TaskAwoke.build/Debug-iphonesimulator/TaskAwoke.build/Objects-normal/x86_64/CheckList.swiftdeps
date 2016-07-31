@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C9TaskAwoke9CheckList", ""]
 provides-dynamic-lookup:
-- "encodeWithCoder"
 - "name"
 - "mainItems"
-- "countUnCheckItems"
+- "encodeWithCoder"
 - "iconName"
+- "countUnCheckItems"
 depends-top-level:
-- "StringLiteralType"
-- "MainItem"
-- "CheckList"
-- !private "+="
 - !private "!="
-- "Int"
-- "NSCoder"
-- "NSCoding"
-- !private "BooleanLiteralType"
-- "String"
 - "NSObject"
+- "NSCoding"
+- "CheckList"
+- "Int"
+- "StringLiteralType"
+- "NSCoder"
+- !private "+="
+- "String"
+- !private "BooleanLiteralType"
+- "MainItem"
 depends-member:
 - ["Ps9AnyObject", "MainItem"]
 - !private ["Ps9AnyObject", "checked"]
